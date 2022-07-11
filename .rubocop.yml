@@ -1,0 +1,68 @@
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: enable
+  Exclude:
+    - 'bin/**/*'
+    - 'config/**/*'
+    - 'db/**/*'
+    - '**/vendor/**/*'
+    - '**/bin/**'
+    - 'config/environments/*'
+    - 'vendor/**/*'
+    - 'Gemfile'
+    - 'Gemfile.lock'
+    - 'Rakefile'
+    - 'Guardfile'
+    - 'config.ru'
+    - 'spec/spec_helper.rb'
+
+Performance:
+  Exclude:
+    - '**/test/**/*'
+
+Rails:
+  Enabled: true
+
+Layout/LineLength:
+  Exclude:
+    - 'bin/**/*'
+  Max: 120
+
+Metrics/CyclomaticComplexity:
+  Exclude:
+    - 'bin/**/*'
+
+Metrics/PerceivedComplexity:
+  Exclude:
+    - 'bin/**/*'
+
+Metrics/MethodLength:
+  Exclude:
+    - 'bin/**/*'
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
+
+Style/Documentation:
+  Exclude:
+    - 'app/models/application_record.rb'
+    - 'config/application.rb'
+
+Style/StringLiterals:
+  Exclude:
+    - 'spec/rails_helper.rb'
+
+Style/FrozenStringLiteralComment:
+  Exclude:
+    - 'spec/rails_helper.rb'
+    - 'app/models/application_record.rb'
+    - 'app/mailers/application_mailer.rb'
+    - 'app/jobs/application_job.rb'
+    - 'app/controllers/application_controller.rb'
+    - 'app/channels/application_cable/connection.rb'
+    - 'app/channels/application_cable/channel.rb'

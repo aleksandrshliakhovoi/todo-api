@@ -18,6 +18,7 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.18'
+  gem 'lefthook', '~> 0.5.5'
 end
 
 group :development do
@@ -35,6 +36,7 @@ end
 
 group :test do
   gem 'rspec-rails', '~> 5.1', '>= 5.1.2'
+  gem 'simplecov', '~> 0.21.2', require: false
   gem 'shoulda-matchers', '~> 5.1'
 end
 
