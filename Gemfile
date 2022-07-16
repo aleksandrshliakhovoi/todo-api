@@ -12,6 +12,7 @@ gem 'rack-cors'
 gem 'rails', '~> 6.1.6'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
+gem 'grape-swagger', '~> 0.10.4'
 
 
 group :development, :test do
